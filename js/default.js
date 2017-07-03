@@ -29,7 +29,7 @@ function setCookie(c_name, value, expiredays)
   var exdate = cltime.toUTCString();
   
   var s="";
-  s += c_name + "=" + wscape(value);
+  s += c_name + "=" + escape(value);
   s += "; path=" + location.pathname;
   if(expiredays)
   {
