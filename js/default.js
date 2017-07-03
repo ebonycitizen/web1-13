@@ -110,3 +110,13 @@ var refresh = function()
 }
 
 update();
+
+//change image
+var thumbs = document.querySelectorAll('.thumb');
+for(idx in thumbs)
+{
+  thumbs[idx].onclick = function()
+  {
+    document.getElementById("bigimg").src = 'img/' + this.dataset.image + '.jpg';
+  }
+}
