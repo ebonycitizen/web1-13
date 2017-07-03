@@ -11,7 +11,7 @@ if(filename === 'other.html')
 }
 else
 {
-  opt = document.querySelector('option[value="[value="index.html"]');
+  opt = document.querySelector('option[value="index.html"]');
 }
 opt.selected = true;
 
