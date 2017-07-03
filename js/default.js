@@ -3,7 +3,7 @@ function getFileName()
   return window.location.href.split('/').pop();
 }
 
-var filaname = getFileNamer();
+var filaname = getFileName();
 var opt;
 if(filemane === 'other.html')
 {
