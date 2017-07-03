@@ -1,3 +1,25 @@
+function getFileName()
+{
+  return window.location.href.split('/').pop();
+}
+
+var filaname = getFileNamer();
+var opt;
+if(filemane === 'other.html')
+{
+  opt = document.querySelector('option[value="other.html"]');
+}
+else
+{
+  opt = document.querySelector('option[value[value="index.html"]');
+}
+opt.selected = true;
+
+document.getElementById('form').select.onchange = function()
+{
+  location.href = document.getElementById('form').select.value;
+}
+
 var separate_time = function(time)
 {
   var sec = time.getSeconds();
