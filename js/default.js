@@ -1,3 +1,4 @@
+//change page
 function getFileName()
 {
   return window.location.href.split('/').pop();
@@ -20,6 +21,21 @@ document.getElementById('form').select.onchange = function()
   location.href = document.getElementById('form').select.value;
 }
 
+//cookie
+var last_date = getCookie('lastDate');
+if(last_date)
+{
+  document.getElementById('cookie').textContent = '前回訪れた時間' + last_date;
+}
+else
+{
+  document.getElementById('cookie').textContent = '初めまして';
+}
+
+var current_time = new Date();
+setCookie('lastDate', current_time.toString(), 7);
+
+//countdown
 var separate_time = function(time)
 {
   var sec = time.getSeconds();
